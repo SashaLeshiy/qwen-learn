@@ -1,0 +1,14 @@
+# OS junk
+.DS_Store
+
+# Состояние сессии
+.qwen/learn-active-log
+.qwen/tmp/
+
+# Obsidian (изменчивое состояние рабочего пространства)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# Зависимости (если появятся)
+node_modules/

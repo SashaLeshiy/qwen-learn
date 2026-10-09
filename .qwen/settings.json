@@ -1,0 +1,36 @@
+{
+  "tools": {
+    "approvalMode": "auto"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(ответ *)",
+      "Bash(». *)",
+      "Bash(учитель)",
+      "Bash(вопрос *)",
+      "Bash(внешний *)",
+      "Bash(фиксировано)",
+      "Bash(. *)",
+      "Bash(md)",
+      "Bash(вы)",
+      "Bash(давай *)",
+      "Bash(фаза *)",
+      "Bash(сложность *)",
+      "Bash(динамический *)",
+      "Bash(например, *)"
+    ],
+    "autoMode": {
+      "hints": {
+        "allow": [
+          "Запуск node scripts/log.mjs для ведения markdown-журнала занятий (append/current/set/init)",
+          "Запуск node scripts/render.mjs для рендера Mermaid/SVG-диаграмм в PNG в папке viz/",
+          "Открытие заметки или vault в Obsidian командой open obsidian://..."
+        ]
+      },
+      "environment": [
+        "Личная локальная учебная папка ~/Documents/learn; команды ограничены скриптами журнала/рендера и открытием Obsidian"
+      ]
+    }
+  },
+  "$version": 4
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="680" fill="#ffffff"/>
+
+  <!-- ============ оси ============ -->
+  <g stroke="#1f2937" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <line x1="120" y1="580" x2="820" y2="580"/>
+    <line x1="120" y1="580" x2="120" y2="42"/>
+  </g>
+  <path d="M 818 573 L 838 580 L 818 587 Z" fill="#1f2937"/>
+  <path d="M 113 44 L 120 24 L 127 44 Z" fill="#1f2937"/>
+
+  <!-- ============ деления по n ============ -->
+  <g stroke="#9aa5b1" stroke-width="2" stroke-linecap="round">
+    <line x1="120" y1="580" x2="120" y2="590"/>
+    <line x1="256" y1="580" x2="256" y2="590"/>
+    <line x1="392" y1="580" x2="392" y2="590"/>
+    <line x1="528" y1="580" x2="528" y2="590"/>
+    <line x1="664" y1="580" x2="664" y2="590"/>
+    <line x1="800" y1="580" x2="800" y2="590"/>
+  </g>
+  <g fill="#4a5568" font-size="22" text-anchor="middle">
+    <text x="120" y="618">0</text>
+    <text x="256" y="618">2</text>
+    <text x="392" y="618">4</text>
+    <text x="528" y="618">6</text>
+    <text x="664" y="618">8</text>
+    <text x="800" y="618">10</text>
+  </g>
+
+  <!-- ============ подписи осей ============ -->
+  <text x="852" y="590" font-size="27" font-style="italic" fill="#1f2937">n</text>
+  <text transform="translate(66,330) rotate(-90)" font-size="24" text-anchor="middle" fill="#1f2937">число операций</text>
+
+  <!-- ============ кривые ============ -->
+  <!-- O(1): константа -->
+  <path d="M 120 548 L 800 548" fill="none" stroke="#6b7280" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- O(log n): 2 + log2 n -->
+  <path d="M188 548 L222 538.6 L256 532 L290 526.9 L324 522.6 L358 519.1 L392 516 L426 513.3 L460 510.9 L494 508.7 L528 506.6 L562 504.8 L596 503.1 L630 501.5 L664 500 L698 498.6 L732 497.3 L766 496 L800 494.9"
+        fill="none" stroke="#4a5568" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- O(n): линейная -->
+  <path d="M 120 580 L 800 420" fill="none" stroke="#1f2937" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- O(n^2): парабола n^2/3 -->
+  <path d="M120 580 L154 578.7 L188 574.7 L222 568 L256 558.7 L290 546.7 L324 532 L358 514.7 L392 494.7 L426 472 L460 446.7 L494 418.7 L528 388 L562 354.7 L596 318.7 L630 280 L664 238.7 L698 194.7 L732 148 L766 98.7 L800 46.7"
+        fill="none" stroke="#c2410c" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ============ подписи кривых ============ -->
+  <g font-size="24" text-anchor="middle">
+    <text x="716" y="540" fill="#6b7280">O(1)</text>
+    <text x="730" y="486" fill="#4a5568">O(log n)</text>
+    <text x="730" y="410" fill="#1f2937">O(n)</text>
+  </g>
+  <text x="722" y="215" font-size="24" text-anchor="start" fill="#c2410c">O(n²)</text>
+</svg>
